@@ -1,0 +1,143 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Fri May 26 15:16:32 2023
+| Host         : LAPTOPGV467QMQ running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file CPU_TOP_control_sets_placed.rpt
+| Design       : CPU_TOP
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    74 |
+| Unused register locations in slices containing registers |   125 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              27 |           13 |
+| No           | No                    | Yes                    |              85 |           40 |
+| No           | Yes                   | No                     |              56 |           21 |
+| Yes          | No                    | No                     |              45 |           19 |
+| Yes          | No                    | Yes                    |             252 |           98 |
+| Yes          | Yes                   | No                     |            1154 |          740 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|               Clock Signal              |                                                    Enable Signal                                                   |                                                       Set/Reset Signal                                                      | Slice Load Count | Bel Load Count |
++-----------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                          |                                                                                                                    |                                                                                                                             |                1 |              1 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/upg_wen_o2_out                                                                                  | upg_rst                                                                                                                     |                1 |              1 |
+|  clk_IBUF_BUFG                          | bt/buttonout0                                                                                                      | decoder/rst                                                                                                                 |                1 |              1 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/upg_done_o_i_1_n_0                                                                              | upg_rst                                                                                                                     |                1 |              1 |
+|  prgrom/instmem_i_1_n_0                 |                                                                                                                    |                                                                                                                             |                1 |              2 |
+|  uart/inst/upg_inst/rdStat_BUFG         |                                                                                                                    | upg_rst                                                                                                                     |                2 |              2 |
+|  light/clkout                           |                                                                                                                    | decoder/rst                                                                                                                 |                1 |              3 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/s_axi_wdata                                                                                     |                                                                                                                             |                2 |              3 |
+|  dmem/ram_i_1_n_0                       |                                                                                                                    |                                                                                                                             |                3 |              4 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/axi_uart_inst/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/start2                                      | uart/inst/upg_inst/axi_uart_inst/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_ce_clr                                  |                1 |              4 |
+| ~clk1/inst/clk_out1                     | prgrom/PC_reg[31][0]                                                                                               | decoder/rst                                                                                                                 |                1 |              4 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/axi_uart_inst/U0/UARTLITE_CORE_I/BAUD_RATE_I/en_16x_Baud                                        |                                                                                                                             |                2 |              4 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/s_axi_wdata                                                                                     | uart/inst/upg_inst/s_axi_wdata[6]_i_1_n_0                                                                                   |                3 |              4 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG |                                                                                                                    | uart/inst/upg_inst/axi_uart_inst/U0/UARTLITE_CORE_I/UARTLITE_TX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/SS[0] |                2 |              6 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG |                                                                                                                    | uart/inst/upg_inst/axi_uart_inst/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/CNTR_INCR_DECR_ADDN_F_I/SS[0] |                2 |              6 |
+|  prgrom/E[0]                            |                                                                                                                    | decoder/rst                                                                                                                 |                2 |              7 |
+|  prgrom/Y[0]_0[0]                       |                                                                                                                    | decoder/rst                                                                                                                 |                2 |              7 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/axi_uart_inst/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/I_DECODER/fifo_wr                           |                                                                                                                             |                1 |              7 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG |                                                                                                                    | uart/inst/upg_inst/axi_uart_inst/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst                                                  |                4 |              8 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/axi_uart_inst/U0/UARTLITE_CORE_I/UARTLITE_RX_I/SRL_FIFO_I/I_SRL_FIFO_RBU_F/DYNSHREG_F_I/fifo_wr |                                                                                                                             |                1 |              8 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/msg_indx[7]_i_1_n_0                                                                             | upg_rst                                                                                                                     |                4 |              8 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/uart_rdat                                                                                       |                                                                                                                             |                5 |              8 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/s_axi_aresetn0                                                                                  | upg_rst                                                                                                                     |                4 |              8 |
+|  clk1/inst/clk_out1                     | prgrom/ledout_reg[23]_25[1]                                                                                        | decoder/rst                                                                                                                 |                4 |              8 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/axi_uart_inst/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i                               | uart/inst/upg_inst/axi_uart_inst/U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/rst                                                  |                2 |              8 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/byte_len[7]_i_1_n_0                                                                             | upg_rst                                                                                                                     |                4 |              9 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/axi_uart_inst/U0/UARTLITE_CORE_I/BAUD_RATE_I/en_16x_Baud                                        | upg_rst                                                                                                                     |                2 |             10 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/rwait_cnt[15]_i_1_n_0                                                                           | upg_rst                                                                                                                     |                4 |             16 |
+|  clk1/inst/clk_out1                     | prgrom/ledout_reg[23]_25[0]                                                                                        | decoder/rst                                                                                                                 |                7 |             16 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG | uart/inst/upg_inst/wwait_cnt[15]_i_1_n_0                                                                           | upg_rst                                                                                                                     |                5 |             16 |
+| ~clk1/inst/clk_out1                     | prgrom/switchrdata_reg[0][0]                                                                                       | decoder/rst                                                                                                                 |                3 |             16 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG |                                                                                                                    |                                                                                                                             |                8 |             20 |
+| ~clk1/inst/clk_out1                     |                                                                                                                    | decoder/rst                                                                                                                 |               17 |             28 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[26][31][0]                                                                                     | decoder/rst                                                                                                                 |               15 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[20][31][0]                                                                                     | decoder/rst                                                                                                                 |               22 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[22][31][0]                                                                                     | decoder/rst                                                                                                                 |               20 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[1][31][0]                                                                                      | decoder/rst                                                                                                                 |               20 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/hi_reg[0][0]                                                                                                | decoder/rst                                                                                                                 |               19 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[25][31][0]                                                                                     | decoder/rst                                                                                                                 |               14 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[27][31][0]                                                                                     | decoder/rst                                                                                                                 |               16 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[28][31][0]                                                                                     | decoder/rst                                                                                                                 |               16 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[7][31][0]                                                                                      | decoder/rst                                                                                                                 |               25 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[30][31][0]                                                                                     | decoder/rst                                                                                                                 |               26 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[9][31][0]                                                                                      | decoder/rst                                                                                                                 |               26 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[2][31][0]                                                                                      | decoder/rst                                                                                                                 |               25 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[31][31]_0[0]                                                                                   | decoder/rst                                                                                                                 |               19 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[3][31][0]                                                                                      | decoder/rst                                                                                                                 |               19 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[8][31][0]                                                                                      | decoder/rst                                                                                                                 |               25 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[29][31]_1[0]                                                                                   | decoder/rst                                                                                                                 |               22 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[4][31][0]                                                                                      | decoder/rst                                                                                                                 |               22 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[5][31][0]                                                                                      | decoder/rst                                                                                                                 |               24 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[6][31][0]                                                                                      | decoder/rst                                                                                                                 |               27 |             32 |
+| ~clk1/inst/clk_out1                     | prgrom/link_addr_tmp_reg[0]_0[0]                                                                                   |                                                                                                                             |               11 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/lo_reg[0][0]                                                                                                | decoder/rst                                                                                                                 |               14 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[18][31][0]                                                                                     | decoder/rst                                                                                                                 |               23 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[16][31][0]                                                                                     | decoder/rst                                                                                                                 |               21 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[12][31][0]                                                                                     | decoder/rst                                                                                                                 |               22 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[17][31][0]                                                                                     | decoder/rst                                                                                                                 |               19 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[24][31][0]                                                                                     | decoder/rst                                                                                                                 |               20 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[10][31][0]                                                                                     | decoder/rst                                                                                                                 |               25 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[11][31][0]                                                                                     | decoder/rst                                                                                                                 |               23 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[13][31][0]                                                                                     | decoder/rst                                                                                                                 |               20 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[14][31][0]                                                                                     | decoder/rst                                                                                                                 |               23 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[15][31][0]                                                                                     | decoder/rst                                                                                                                 |               24 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[19][31][0]                                                                                     | decoder/rst                                                                                                                 |               18 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[0][31][0]                                                                                      | decoder/rst                                                                                                                 |               21 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[21][31][0]                                                                                     | decoder/rst                                                                                                                 |               19 |             32 |
+|  clk1/inst/clk_out1                     | prgrom/reg_file_reg[23][31][0]                                                                                     | decoder/rst                                                                                                                 |               24 |             32 |
+|  uart/inst/upg_inst/upg_clk_i_IBUF_BUFG |                                                                                                                    | upg_rst                                                                                                                     |               13 |             33 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/byte_num                                                                                        | upg_rst                                                                                                                     |               10 |             36 |
+|  clk_IBUF_BUFG                          |                                                                                                                    | decoder/rst                                                                                                                 |               16 |             41 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/upg_adr_o[14]_i_1_n_0                                                                           | upg_rst                                                                                                                     |               24 |             47 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/wr_byte_num_done                                                                                | upg_rst                                                                                                                     |               13 |             49 |
+|  uart/inst/upg_inst/rdStat_BUFG         | uart/inst/upg_inst/byte_cnt                                                                                        | upg_rst                                                                                                                     |               26 |             56 |
++-----------------------------------------+--------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     4 |
+| 2      |                     2 |
+| 3      |                     2 |
+| 4      |                     5 |
+| 6      |                     2 |
+| 7      |                     3 |
+| 8      |                     7 |
+| 9      |                     1 |
+| 10     |                     1 |
+| 16+    |                    47 |
++--------+-----------------------+
+
+

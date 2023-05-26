@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tfgg484-1" LaunchTime="1685085159">
+  <File Type="PA-TCL" Name="CPU_TOP.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="CPU_TOP_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="CPU_TOP_reports.tcl"/>
+  <File Type="RDS-RDS" Name="CPU_TOP.vds"/>
+  <File Type="RDS-UTIL" Name="CPU_TOP_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="CPU_TOP_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="CPU_TOP.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="CPU_TOP_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="CPU_TOP_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/ButtonVibration.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Ifetc32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/Ifetc32.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/LED.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/LED.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Light.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/Light.v"/>
+        <Attr Name="ImportTime" Val="1684936198"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/MemOrIO.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/MemOrIO.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/Switch.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/Switch.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/control32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/control32.v"/>
+        <Attr Name="ImportTime" Val="1683493076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/decode32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/decode32.v"/>
+        <Attr Name="ImportTime" Val="1683493076"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/dmemory32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/dmemory32.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/executs32.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/executs32.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/programrom.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/programrom.v"/>
+        <Attr Name="ImportTime" Val="1685015942"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/CPU_TOP.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../new/CPU_TOP.v"/>
+        <Attr Name="ImportTime" Val="1685016714"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/RAM/test1dmem32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/prgrom/test1prgmip32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/RAM/dmem32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/ip/prgrom/prgmip32.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="CPU_TOP"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/cpu_xdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="prgrom"/>
+  <BlockFileSet Type="BlockSrcs" Name="RAM"/>
+  <BlockFileSet Type="BlockSrcs" Name="cpuclk"/>
+  <BlockFileSet Type="BlockSrcs" Name="uart_bmpg_0"/>
+</GenRun>
